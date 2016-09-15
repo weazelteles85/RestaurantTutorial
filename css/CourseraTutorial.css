@@ -96,20 +96,51 @@ body {
 @media (min-width: 992px) and (max-width: 1199px) {
 	/* Header */
 	#logo-img {
-		background: url(https://github.com/weazelteles85/RestaurantTutorial/blob/master/fonts/Images/DragonLogo.png?raw=true) no-repeat;
+		background: url(https://github.com/weazelteles85/RestaurantTutorial/blob/master/fonts/Images/SmallDragonLogo.png?raw=true) no-repeat;
 		width:100px;
 	   height:100px;
 		margin:5px 5px 5px 0;
+	}
+	.navbar-brand h1 { /* Restaurant Name */
+		font-size: 1.5em;
 	}
 }
 
 /***************** Small devices only *******************/
 @media (min-width: 768px) and (max-width: 991px) {
+	.navbar-brand h1 { /* Restaurant Name */
+		font-size: 1.5em;
+	}
 
 }
 
 /***************** Extra Small Devices only **************/
 @media (max-width: 767px) {
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1 { /* Restaurant Name */
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+	.navbar-brand p { /*Kosher cert */
+		font-size: .6em;
+		margin-top: 12px;
+	}
+	.navbar-brand p img { /*kosher Img */
+		width: 20px;
+	}
+
+	#collapsable-nav a { /* Collapsed nav menu glyph */
+		text-align: left;
+		font-size: 1.4em;
+	}
+
+	#collapsable-nav a span {
+		font-size: 1em;
+		margin-right: 5px;
+	}
 
 }
 
