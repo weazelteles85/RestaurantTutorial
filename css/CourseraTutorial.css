@@ -86,16 +86,30 @@ body {
 	margin-top: -30px;
 }
 
+#xs-deliver {
+	text-align: center;
+	color:white;
+}
+
+.container .jumbotron {
+	box-shadow: 0 0 50px black;
+	border: 2px solid #3F0C1F;
+}
+
 
 /***************** Large Devices only ******************/
 @media (min-width: 1200px) {
+	.container .jumbotron {
+		background: url('https://github.com/weazelteles85/RestaurantTutorial/blob/master/fonts/Images/RestaurantViewPic_1200.png?raw=true') no-repeat;
+		height: 800px;
+	}
 
 }
 
 /***************** Medium Devices only *****************/
 @media (min-width: 992px) and (max-width: 1199px) {
 	/* Header */
-	#logo-img {
+	#logo-img { /* Dragon Logo */
 		background: url(https://github.com/weazelteles85/RestaurantTutorial/blob/master/fonts/Images/SmallDragonLogo.png?raw=true) no-repeat;
 		width:100px;
 	   height:100px;
@@ -104,6 +118,11 @@ body {
 	.navbar-brand h1 { /* Restaurant Name */
 		font-size: 1.5em;
 	}
+
+	.container .jumbotron {
+		background: url('https://github.com/weazelteles85/RestaurantTutorial/blob/master/fonts/Images/RestaurantViewPic_992.png?raw=true') no-repeat;
+		height: 661px;
+	}
 }
 
 /***************** Small devices only *******************/
@@ -111,7 +130,13 @@ body {
 	.navbar-brand h1 { /* Restaurant Name */
 		font-size: 1.5em;
 	}
-
+	#nav-list {
+		margin-top: 0px;
+	}
+	.container .jumbotron {
+		background: url('https://github.com/weazelteles85/RestaurantTutorial/blob/master/fonts/Images/RestaurantViewPic_768.png?raw=true') no-repeat;
+		height: 512px;
+	}
 }
 
 /***************** Extra Small Devices only **************/
@@ -132,8 +157,12 @@ body {
 		width: 20px;
 	}
 
+	#collapsable-nav {
+		border-color: #61122f;
+	}
+
 	#collapsable-nav a { /* Collapsed nav menu glyph */
-		text-align: left;
+		text-align: center;
 		font-size: 1.4em;
 	}
 
@@ -141,6 +170,31 @@ body {
 		font-size: 1em;
 		margin-right: 5px;
 	}
+
+	#call-btn {
+		text-align: center;
+		border: 1px solid white;
+		border-radius: 5px;
+		background-color:#f6b319;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#call-btn a {
+		font-size: 1.2em;
+		font-weight: bold;
+		width: 100%;
+		color: #61122f; 
+	}
+
+	.container .jumbotron {
+		margin-top: 30px;
+		padding: 0;
+		
+	}
+
+
 
 }
 
