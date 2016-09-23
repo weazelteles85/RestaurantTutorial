@@ -90,6 +90,39 @@ body {
 	text-align: center;
 	color:white;
 }
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+	color: white;
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0;
+}
+
+.panel-footer div.row {
+	margin-bottom: 35px;
+}
+#hours, #address {
+	line-height: 1.5;
+}
+#hours > span, #address > span {
+	font-size: 1.5em;
+}
+#address p {
+	color:#557c3e;
+	font-size: .8em;
+	line-height: 1.8;
+}
+#testimonials {
+	font-style: italic;
+}
+#testimonials p:nth-child(2) {
+	margin-top: 25px;
+}
+
 
 /* HOME PAGE */
 .container .jumbotron {
@@ -239,6 +272,20 @@ body {
 		width: 360px;
 		margin: 0 auto 15px;
 	}
+
+	/*Footer */
+	.panel-footer section {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.panel-footer section:nth-child(3) {
+		margin-bottom: 0;
+	}
+	.panel-footer section hr {
+		width: 75%;
+	}
+
 }
 
 /****************** Super Extra Small Devices iPhone 4 and 5 ***************/
