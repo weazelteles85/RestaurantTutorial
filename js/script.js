@@ -112,7 +112,7 @@ $(function () {
 	//using category and menu items data and snippets html
 	// build menu items HTML to be inserted into page
 	function buildMenuItemsViewHtml (categoryMenuItems, menuItemsTitleHtml, menuItemHtml) {
-		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", categoryMenuItems.category.short_name);
+		//menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", categoryMenuItems.category.name);
 		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "special_instructions", categoryMenuItems.category.special_instructions);
 
 		var finalHtml = menuItemsTitleHtml;
