@@ -114,33 +114,21 @@ $(function () {
 	// build menu items HTML to be inserted into page
 	function buildMenuItemsViewHtml (categoryMenuItems, menuItemsTitleHtml, menuItemHtml) {
 		
-		if (categoryMenuItems.category.name === undefined){
-			menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", "Something went wrong");
-		}
+		
+		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", categoryMenuItems.menu_items[0].name);
+		
 
-		else {
-			menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", categoryMenuItems.category.name);
-		}
-
-		if (categoryMenuItems.category.special_instructions === undefined) {
-			menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "special_instructions", "Something went wrong");
-		}
-
-		else {
-			menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "special_instructions", categoryMenuItems.category.special_instructions);
-		}
+		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "special_instructions", categoryMenuItems.menu_items[0].special_instructions);
+		
 
 		var finalHtml = menuItemsTitleHtml;
 		finalHtml += "<section class='row'>";
 
 		//Loop over menu items
 		var menuItems = categoryMenuItems.menu_items;
-		if (categoryMenuItems.category.short_name === undefined) {
-			catShortName = "Something went wrong";
-		}
-		else {
-			var catShortName = categoryMenuItems.category.short_name;
-		}
+		
+		var catShortName = categoryMenuItems.menu_items[0].short_name;
+		
 
 		for (var i = 0; i < menuItems.length; i++) {
 			//insert menu items values
