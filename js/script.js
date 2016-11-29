@@ -15,7 +15,8 @@ $(function () {
 	var allCategoriesUrl = "dataSource.json";
 	var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 	var categoryHtml = "snippets/category-snippet.html";
-	var menuItemsUrl = "detailedDataSource.json?category=";
+	//var menuItemsUrl = "detailedDataSource.json?category=";
+	var menuItemsUrl = "http://davids-restaurant.herokuapp.com/menu_items.json?category=";
 	var menuItemsTitleHtml = "snippets/menu-items-title.html";
 	var menuItemHtml = "snippets/menu-item.html";
 
@@ -112,7 +113,7 @@ $(function () {
 	//using category and menu items data and snippets html
 	// build menu items HTML to be inserted into page
 	function buildMenuItemsViewHtml (categoryMenuItems, menuItemsTitleHtml, menuItemHtml) {
-		//menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", categoryMenuItems.category.name);
+		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", categoryMenuItems.category.name);
 		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "special_instructions", categoryMenuItems.category.special_instructions);
 
 		var finalHtml = menuItemsTitleHtml;
