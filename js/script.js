@@ -114,7 +114,7 @@ $(function () {
 	// build menu items HTML to be inserted into page
 	function buildMenuItemsViewHtml (categoryMenuItems, menuItemsTitleHtml, menuItemHtml) {
 		
-		if (categoryMenuItems.category.name == undefined){
+		if (categoryMenuItems.category.name === undefined){
 			menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", "Something went wrong");
 		}
 
@@ -122,7 +122,7 @@ $(function () {
 			menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", categoryMenuItems.category.name);
 		}
 
-		if (categoryMenuItems.category.special_instructions == undefined) {
+		if (categoryMenuItems.category.special_instructions === undefined) {
 			menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "special_instructions", "Something went wrong");
 		}
 
@@ -135,7 +135,7 @@ $(function () {
 
 		//Loop over menu items
 		var menuItems = categoryMenuItems.menu_items;
-		if (categoryMenuItems.category.short_name == undefined) {
+		if (categoryMenuItems.category.short_name === undefined) {
 			catShortName = "Something went wrong";
 		}
 		else {
