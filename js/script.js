@@ -11,7 +11,8 @@ $(function () {
 	var dc = {};
 
 	var homeHtml = "snippets/home-snippet.html";
-	var allCategoriesUrl = "http://davids-restaurant.herokuapp.com/categories.json";
+	//var allCategoriesUrl = "http://davids-restaurant.herokuapp.com/categories.json";
+	var allCategoriesUrl = "https://github.com/weazelteles85/RestaurantTutorial/blob/master/dataSource.json";
 	var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 	var categoryHtml = "snippets/ategory-snippet.html";
 
