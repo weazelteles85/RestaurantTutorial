@@ -61,7 +61,7 @@ $(function () {
 	dc.loadMenuItems = function (categoryShort) {
 		showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(menuItemsUrl + categoryShort, buildAndShowMenuItemsHTML);
-		Console.log(menuItemsUrl + categoryShort)
+		dc.Console.log(menuItemsUrl + categoryShort)
 	};
 
 	//Builds HTML for the categories page based on the data from the server
@@ -175,10 +175,8 @@ $(function () {
 	}
 
 
-
-
-
-
 	global.$dc = dc;
 
 })(window);
+
+Console.log(menuItemsUrl + categoryShort)
