@@ -114,8 +114,8 @@ $(function () {
 	//using category and menu items data and snippets html
 	// build menu items HTML to be inserted into page
 	function buildMenuItemsViewHtml (categoryMenuItems, menuItemsTitleHtml, menuItemHtml) {
-		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", categoryMenuItems.category.name);
-		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "special_instructions", categoryMenuItems.category.special_instructions);
+		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", categoryMenuItems.menu_items.name);
+		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "special_instructions", categoryMenuItems.menu_items.special_instructions);
 
 		var finalHtml = menuItemsTitleHtml;
 		finalHtml += "<section class='row'>";
@@ -178,5 +178,3 @@ $(function () {
 	global.$dc = dc;
 
 })(window);
-
-Console.log(menuItemsUrl + categoryShort)
