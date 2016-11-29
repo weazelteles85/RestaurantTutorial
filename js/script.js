@@ -61,7 +61,6 @@ $(function () {
 	dc.loadMenuItems = function (categoryShort) {
 		showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(menuItemsUrl + categoryShort, buildAndShowMenuItemsHTML);
-		dc.Console.log(menuItemsUrl + categoryShort)
 	};
 
 	//Builds HTML for the categories page based on the data from the server
@@ -114,15 +113,15 @@ $(function () {
 	//using category and menu items data and snippets html
 	// build menu items HTML to be inserted into page
 	function buildMenuItemsViewHtml (categoryMenuItems, menuItemsTitleHtml, menuItemHtml) {
-		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", categoryMenuItems.menu_items.name);
-		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "special_instructions", categoryMenuItems.menu_items.special_instructions);
+		//menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", categoryMenuItems.category.name);
+		//menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "special_instructions", categoryMenuItems.category.special_instructions);
 
 		var finalHtml = menuItemsTitleHtml;
 		finalHtml += "<section class='row'>";
 
 		//Loop over menu items
 		var menuItems = categoryMenuItems.menu_items;
-		var catShortName = categoryMenuItems.category.short_name;
+		//var catShortName = categoryMenuItems.category.short_name;
 
 		for (var i = 0; i < menuItems.length; i++) {
 			//insert menu items values
