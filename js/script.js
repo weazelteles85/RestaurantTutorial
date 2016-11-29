@@ -14,7 +14,7 @@ $(function () {
 	//var allCategoriesUrl = "http://davids-restaurant.herokuapp.com/categories.json";
 	var allCategoriesUrl = "dataSource.json";
 	var categoriesTitleHtml = "snippets/categories-title-snippet.html";
-	var categoryHtml = "snippets/ategory-snippet.html";
+	var categoryHtml = "snippets/category-snippet.html";
 
 	// Convinience function for inserting innerHTML for 'select'
 	var insertHtml = function (selector, html) {
