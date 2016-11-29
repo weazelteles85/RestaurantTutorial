@@ -99,7 +99,7 @@ $(function () {
 	//Builds HTML for the single category page based on the data from the server
 	function buildAndShowMenuItemsHTML (categoryMenuItems) {
 		//Load title snippet of menu items page
-		$ajaxUtils.sendGetRequest(menuItemsTitleHtml. function (menuItemsTitleHtml) {
+		$ajaxUtils.sendGetRequest(menuItemsTitleHtml, function (menuItemsTitleHtml) {
 			//Retrieve single menu item snippet
 			$ajaxUtils.sendGetRequest(menuItemHtml, function (menuItemHtml) {
 				var menuItemsViewHtml = buildMenuItemsViewHtml(categoryMenuItems, menuItemsTitleHtml, menuItemHtml);
