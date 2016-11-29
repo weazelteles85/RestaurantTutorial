@@ -15,8 +15,8 @@ $(function () {
 	var allCategoriesUrl = "dataSource.json";
 	var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 	var categoryHtml = "snippets/category-snippet.html";
-	//var menuItemsUrl = "detailedDataSource.json?category=";
-	var menuItemsUrl = "http://davids-restaurant.herokuapp.com/menu_items.json?category=";
+	var menuItemsUrl = "detailedDataSource.json?category=";
+	//var menuItemsUrl = "http://davids-restaurant.herokuapp.com/menu_items.json?category=";
 	var menuItemsTitleHtml = "snippets/menu-items-title.html";
 	var menuItemHtml = "snippets/menu-item.html";
 
@@ -61,6 +61,7 @@ $(function () {
 	dc.loadMenuItems = function (categoryShort) {
 		showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(menuItemsUrl + categoryShort, buildAndShowMenuItemsHTML);
+		Console.log(menuItemsUrl + categoryShort)
 	};
 
 	//Builds HTML for the categories page based on the data from the server
